@@ -3,119 +3,87 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
 }
 
-.cmp-todolistManager {
+.cmp-quizApplication {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  padding: 20px;
+  list-style: none;
   background-color: #0F459C;
-  min-height: 100vh;
+  padding: 20px;
 }
-.cmp-todolistManager__heading {
-  margin: 10px auto 40px auto;
+.cmp-quizApplication__heading {
+  margin: 20px auto 40px auto;
+}
+.cmp-quizApplication__heading--title {
+  font-size: 30px;
   color: white;
   text-align: center;
 }
-.cmp-todolistManager__heading--title {
-  font-size: 30px;
-  font-weight: 500;
-}
-.cmp-todolistManager__heading--subtitle {
+.cmp-quizApplication__heading--subtitle {
   font-size: 20px;
-  font-weight: 300;
+  color: white;
+  text-align: center;
 }
-.cmp-todolistManager__taskManager {
+.cmp-quizApplication__result {
   min-width: 350px;
-  max-width: 450px;
-  margin: auto;
-}
-.cmp-todolistManager__taskManager__searchBox {
-  background-color: white;
-  padding: 20px 25px;
-  border-radius: 5px;
-  margin: 20px 0px;
-}
-.cmp-todolistManager__taskManager__searchBox__search {
-  display: flex;
+  max-width: 400px;
   margin: 10px auto;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
 }
-.cmp-todolistManager__taskManager__searchBox__search--searchInput {
-  border-radius: 3px;
+.cmp-quizApplication__result--score {
+  padding: 10px 20px;
+}
+.cmp-quizApplication__result--reload--button {
+  background-color: #04AA6D;
+  border-radius: 0px 0px 5px 5px;
+  border: none;
+  color: white;
   width: 100%;
-  padding: 10px;
-  margin-right: 10px;
-  font-size: 16px;
+  padding: 10px 20px;
 }
-.cmp-todolistManager__taskManager__searchBox__search--reset {
-  font-size: 24px;
-  padding: 10px 0px;
-  height: 100%;
+.cmp-quizApplication__result--reload--button:hover {
+  background-color: #058d5b;
   cursor: pointer;
 }
-.cmp-todolistManager__taskManager__taskBox {
-  background-color: white;
-  padding: 20px 25px;
-  border-radius: 5px;
-  margin: 20px 0px;
-}
-.cmp-todolistManager__taskManager__taskBox__tasks {
-  margin: 10px auto;
-}
-.cmp-todolistManager__taskManager__taskBox__tasks--list {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f2f2f2;
-  margin: 10px 0px;
-}
-.cmp-todolistManager__taskManager__taskBox__tasks--list span {
-  padding: 10px;
-}
-.cmp-todolistManager__taskManager__taskBox__tasks--list--hide {
+.cmp-quizApplication__hide {
   display: none;
 }
-.cmp-todolistManager__taskManager__taskBox__tasks--list--delete {
-  padding: 14px 10px;
-  background-color: #c43636;
-  color: white;
-  border-radius: 0px 3px 3px 0px;
-  cursor: pointer;
+.cmp-quizApplication__quizForm {
+  max-width: 1000px;
+  margin: auto;
 }
-.cmp-todolistManager__taskManager__taskBox__addTask {
-  display: flex;
-  margin: 30px 0px 10px 0px;
-}
-.cmp-todolistManager__taskManager__taskBox__addTask--addInput {
-  border-radius: 3px;
-  width: 100%;
-  padding: 10px;
-  margin-right: 10px;
-  font-size: 16px;
-}
-.cmp-todolistManager__taskManager__taskBox__addTask--submit {
-  background-color: #60e160;
-  border: 0px;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.cmp-todolistManager__taskManager__messageBox {
+.cmp-quizApplication__quizForm--question {
+  padding: 20px 10px;
   background-color: white;
-  padding: 20px 25px;
-  border-radius: 5px;
   margin: 20px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-radius: 8px;
+  font-size: 18px;
 }
-.cmp-todolistManager__taskManager__messageBox--clear {
-  border: 0px;
-  border-radius: 3px;
-  background-color: #083e95;
+.cmp-quizApplication__quizForm--correct {
+  background-color: rgb(202, 234, 202);
+}
+.cmp-quizApplication__quizForm--wrong {
+  background-color: rgb(224, 177, 177);
+}
+.cmp-quizApplication__quizForm--option {
+  margin-left: 10px;
+}
+.cmp-quizApplication__quizForm--submit {
+  text-align: center;
+  margin: 30px auto;
+}
+.cmp-quizApplication__quizForm--submit--button {
+  background-color: #04AA6D;
   color: white;
-  font-size: 16px;
-  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 25px;
+  font-size: 25px;
+}
+.cmp-quizApplication__quizForm--submit--button:hover {
+  background-color: #058d5b;
   cursor: pointer;
 }

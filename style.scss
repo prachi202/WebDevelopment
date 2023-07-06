@@ -4,120 +4,101 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
 }
 
-.cmp-todolistManager{
+.cmp-quizApplication{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    // list-style: none;
-    padding: 20px;
+    list-style: none;
     background-color: #0F459C;
-    min-height: 100vh;    
+    padding: 20px;
     &__heading{
-        margin: 10px auto 40px auto;
-        color: white;
-        text-align: center;
+        margin: 20px auto 40px auto;
         &--title{
             font-size: 30px;
-            font-weight: 500;
+            color: white;
+            text-align: center;
+            
         }
         &--subtitle{
             font-size: 20px;
-            font-weight: 300;
+            color: white;
+            text-align: center;
+
         }
     }
-    &__taskManager{
+
+    &__result{
         min-width: 350px;
-        max-width: 450px;
-        margin: auto;
-        &__searchBox{
-            background-color: white;
-            padding: 20px 25px;
-            border-radius: 5px;
-            margin: 20px 0px;
-            &__search{
-                display: flex;
-                margin: 10px auto;
-                &--searchInput{
-                    border-radius: 3px;
-                    width: 100%;
-                    padding: 10px;
-                    margin-right: 10px;
-                    font-size: 16px;
-                }
-                &--reset{
-                    font-size: 24px;
-                    padding: 10px 0px;
-                    height: 100%;
-                    cursor: pointer;
-                }
-            }
+        max-width: 400px;
+        margin: 10px auto;
+        border-radius: 5px;
+        text-align: center;        
+        background-color: white;
+        &--score{
+            padding: 10px 20px;
         }
-        &__taskBox{
-            background-color: white;
-            padding: 20px 25px;
-            border-radius: 5px;
-            margin: 20px 0px;
-            &__tasks{
-                margin: 10px auto;
-                &--list{
-                    display: flex;
-                    justify-content: space-between;
-                    background-color: #f2f2f2;
-                    margin: 10px 0px;
-                    span{
-                        padding: 10px;
-                    }
-                    &--hide{
-                        display: none;
-                    }
-                    &--delete{
-                        padding: 14px 10px;
-                        background-color: #c43636;
-                        color: white;
-                        border-radius: 0px 3px 3px 0px;
-                        cursor: pointer;
-                    }
-                }
-            }
-            &__addTask{
-                display: flex;
-                margin: 30px 0px 10px 0px;
-                &--addInput{
-                    border-radius: 3px;
-                    width: 100%;
-                    padding: 10px;
-                    margin-right: 10px;
-                    font-size: 16px;
-                }
-                &--submit{
-                    background-color: #60e160;
-                    border: 0px;
-                    padding: 10px;
-                    font-size: 16px;
-                    border-radius: 3px;
-                    cursor: pointer;
-                }
-            }
-        }
-        &__messageBox{
-            background-color: white;
-            padding: 20px 25px;
-            border-radius: 5px;
-            margin: 20px 0px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            &--clear{
-                border: 0px;
-                border-radius: 3px;
-                background-color: #083e95;
+        &--reload{
+            &--button{
+                background-color: #04AA6D;
+                border-radius: 0px 0px 5px 5px;
+                border: none;
                 color: white;
-                font-size: 16px;
-                padding: 10px;
+                width: 100%;
+                padding: 10px 20px;
+            }
+            &--button:hover{
+                background-color: #058d5b;
+                cursor: pointer;
+            }
+        }    
+        
+    }
+
+    &__hide{
+        display: none;
+    }
+
+    &__quizForm{
+        max-width: 1000px;
+        margin: auto;
+        &--question{
+            padding: 20px 10px;
+            background-color: white;
+            margin: 20px 0px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        &--correct{
+            background-color: rgb(202 234 202);
+        }
+        &--wrong{
+            background-color: rgb(224 177 177);
+        }        
+        &--option{
+            margin-left: 10px;
+        }
+        &--submit{
+            text-align: center;
+            margin: 30px auto;
+            &--button{
+                background-color: #04AA6D;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 5px 25px;                                
+                font-size: 25px;                
+            }
+            &--button:hover{
+                background-color: #058d5b;
                 cursor: pointer;
             }
         }
     }
 }
+// &--correct{
+//     background-color: rgb(198, 244, 198);
+// }
+// &--wrong{
+//     background-color: rgb(240, 158, 158);
+// }
